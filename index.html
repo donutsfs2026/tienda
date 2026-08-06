@@ -1,0 +1,3113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donuts FS | Catálogo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <style>
+/* ===========================
+   DONUTS FS PREMIUM CSS V2
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+--primary:#ff5b95;
+--primary-dark:#ff3f82;
+--light-pink:#fde8ee;
+--background:#fff7f9;
+--cream:#fffaf8;
+--text:#4b2e2e;
+--gray:#7b7b7b;
+--white:#fff;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--background);
+
+color:var(--text);
+
+}
+
+img{
+
+display:block;
+
+width:100%;
+
+}
+
+button{
+
+cursor:pointer;
+
+border:none;
+
+font-family:Poppins;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/*========================*/
+
+header{
+
+padding:40px 7%;
+
+background:#f9dce6;
+
+overflow:hidden;
+
+}
+
+.logo{
+
+margin-bottom:25px;
+
+}
+
+.logo img{
+
+height:75px;
+
+width:auto;
+
+}
+
+/*========================*/
+
+.hero{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:70px;
+
+background:#fff9fa;
+
+border-radius:35px;
+
+padding:70px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+right:-130px;
+
+top:-130px;
+
+width:350px;
+
+height:350px;
+
+background:#ffd4e3;
+
+border-radius:50%;
+
+opacity:.35;
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+left:-80px;
+
+bottom:-80px;
+
+width:220px;
+
+height:220px;
+
+background:#ffd9e7;
+
+border-radius:50%;
+
+opacity:.25;
+
+}
+
+.hero-text{
+
+position:relative;
+
+z-index:5;
+
+}
+
+.badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+background:#ff76a8;
+
+padding:12px 24px;
+
+color:white;
+
+font-weight:600;
+
+border-radius:100px;
+
+margin-bottom:25px;
+
+font-size:15px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+line-height:1.05;
+
+margin-bottom:25px;
+
+font-weight:800;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.7;
+
+color:#777;
+
+max-width:500px;
+
+margin-bottom:40px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:var(--primary);
+
+color:white;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-5px);
+
+background:var(--primary-dark);
+
+box-shadow:0 18px 35px rgba(255,91,149,.35);
+
+}
+
+.hero-image{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+z-index:5;
+
+}
+
+.hero-image img{
+
+max-width:520px;
+
+width:100%;
+
+border-radius:30px;
+
+object-fit:cover;
+
+box-shadow:0 35px 60px rgba(0,0,0,.15);
+
+transition:.45s;
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+.hero-image img:hover{
+
+transform:scale(1.04);
+
+}
+
+/*========================*/
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+/*========================*/
+
+.search-area{
+
+padding:40px 7% 20px;
+
+}
+
+.search-area input{
+
+width:100%;
+
+padding:18px 30px;
+
+border:none;
+
+border-radius:60px;
+
+background:white;
+
+font-size:17px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+outline:none;
+
+}
+
+/*========================*/
+
+.categories{
+
+padding:0 7% 40px;
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.category{
+
+background:white;
+
+padding:14px 28px;
+
+border-radius:50px;
+
+font-weight:600;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.category:hover,
+
+.category.active{
+
+background:var(--primary);
+
+color:white;
+
+}
+
+/*========================*/
+
+.container{
+
+display:grid;
+
+grid-template-columns:1fr 360px;
+
+gap:35px;
+
+padding:0 7% 70px;
+
+align-items:start;
+
+}
+
+.products{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.product-card{
+
+background:#fefdfd;
+
+border-radius:28px;
+
+overflow:hidden;
+
+box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.product-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.product-card img{
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+.product-card h3{
+
+padding:20px 20px 10px;
+
+font-size:24px;
+
+}
+
+.product-card p{
+
+padding:0 20px;
+
+color:#777;
+
+min-height:55px;
+
+}
+
+.price{
+
+padding:18px 20px;
+
+font-size:28px;
+
+font-weight:bold;
+
+color:var(--primary);
+
+}
+
+.product-card button{
+
+margin:0 20px 22px;
+
+width:calc(100% - 40px);
+
+padding:16px;
+
+background:var(--primary);
+
+color:white;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.product-card button:hover{
+
+background:var(--primary-dark);
+
+}
+
+/*========================*/
+
+.cart{
+
+background:white;
+
+border-radius:30px;
+
+padding:25px;
+
+position:sticky;
+
+top:20px;
+
+box-shadow:0 25px 45px rgba(0,0,0,.08);
+
+}
+
+.cart h2{
+
+margin-bottom:20px;
+
+}
+
+#cart-items{
+
+max-height:350px;
+
+overflow:auto;
+
+margin-bottom:20px;
+
+}
+
+.cart input,
+
+.cart textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-top:12px;
+
+border-radius:15px;
+
+border:1px solid #ececec;
+
+outline:none;
+
+}
+
+#whatsapp{
+
+margin-top:18px;
+
+width:100%;
+
+padding:18px;
+
+background:#25D366;
+
+color:white;
+
+font-size:18px;
+
+border-radius:50px;
+
+font-weight:600;
+
+}
+
+/*========================*/
+
+.promo{
+
+padding:0 7% 70px;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+.promo-card{
+
+background:linear-gradient(135deg,#ff5b95,#ff8ab5);
+
+padding:50px;
+
+border-radius:30px;
+
+color:white;
+
+box-shadow:0 20px 40px rgba(255,91,149,.35);
+
+}
+
+footer{
+
+background:#fea6bf;
+
+padding:50px;
+
+text-align:center;
+
+color:white;
+
+}
+
+footer img{
+
+height:70px;
+
+width:auto;
+
+margin:auto;
+
+margin-bottom:15px;
+
+}
+
+footer div{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+font-size:28px;
+
+margin-top:18px;
+
+}
+
+/*========================*/
+
+@media(max-width:1000px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+padding:45px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+margin:auto;
+
+margin-bottom:35px;
+
+}
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.cart{
+
+position:relative;
+
+}
+
+.promo{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:700px){
+
+header{
+
+padding:25px;
+
+}
+
+.hero{
+
+padding:30px;
+
+gap:30px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero-image img{
+
+max-width:320px;
+
+}
+
+.search-area,
+
+.categories,
+
+.container,
+
+.promo{
+
+padding-left:25px;
+
+padding-right:25px;
+
+}
+
+}
+
+.hero-logo{
+
+margin-bottom:30px;
+
+}
+
+.hero-logo img{
+
+width:150px;
+
+height:auto;
+
+display:block;
+
+filter:drop-shadow(0 12px 25px rgba(0,0,0,.15));
+
+transition:.35s;
+
+}
+
+.hero-logo img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+   DONUTS FS PREMIUM OVERRIDE
+=========================== */
+
+:root{
+
+--primary:#F65A96;
+--primary-dark:#E74182;
+--background:#FDF3F6;
+--light-pink:#FADBE5;
+--cream:#FFF9F8;
+--text:#4B2D2A;
+
+}
+
+/* HEADER */
+
+header{
+
+background:linear-gradient(
+180deg,
+#fc75a8 0%,
+#fcf2f5 100%
+)!important;
+
+padding:45px 7%!important;
+
+}
+
+/* HERO */
+
+.hero{
+
+background:#ffffff!important;
+
+border-radius:40px!important;
+
+padding:75px!important;
+
+gap:90px!important;
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.05)!important;
+
+}
+
+/* CÍRCULOS DECORATIVOS */
+
+.hero::before{
+
+width:420px!important;
+
+height:420px!important;
+
+background:#fc75a8!important;
+
+opacity:.55!important;
+
+right:-150px!important;
+
+top:-150px!important;
+
+}
+
+.hero::after{
+
+width:260px!important;
+
+height:260px!important;
+
+background:#fc75a8!important;
+
+opacity:.45!important;
+
+left:-100px!important;
+
+bottom:-100px!important;
+
+}
+
+/* LOGO */
+
+
+
+
+
+.hero-logo img:hover{
+
+transform:scale(1.03)!important;
+
+}
+
+/* TITULO */
+
+.hero h1{
+
+font-family:"DM Serif Display",serif!important;
+
+font-size:76px!important;
+
+font-weight:400!important;
+
+line-height:1!important;
+
+letter-spacing:-1px!important;
+
+color:#4B2D2A!important;
+
+}
+
+/* TEXTO */
+
+.hero p{
+
+font-size:20px!important;
+
+line-height:1.8!important;
+
+color:#786767!important;
+
+max-width:480px!important;
+
+margin-bottom:35px!important;
+
+}
+
+/* BOTON */
+
+.hero-btn{
+
+display:inline-flex!important;
+
+align-items:center;
+
+justify-content:center;
+
+padding:18px 42px!important;
+
+border-radius:60px!important;
+
+background:linear-gradient(
+135deg,
+#F65A96,
+#FF80AF
+)!important;
+
+box-shadow:
+
+0 12px 25px rgba(246,90,150,.25)!important;
+
+font-size:17px!important;
+
+font-weight:600!important;
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-3px)!important;
+
+background:linear-gradient(
+135deg,
+#E74182,
+#FF72A5
+)!important;
+
+}
+
+/* IMAGEN */
+
+.hero-image{
+
+display:flex!important;
+
+justify-content:center!important;
+
+align-items:center!important;
+
+position:relative!important;
+
+}
+
+/* FONDO DETRÁS DE LA FOTO */
+
+.hero-image::before{
+
+content:"";
+
+position:absolute;
+
+width:560px;
+
+height:560px;
+
+background:#fc75a941;
+
+border-radius:35px;
+
+z-index:-1;
+
+}
+
+/* FOTO */
+
+.hero-image img{
+
+max-width:520px!important;
+
+width:100%!important;
+
+border-radius:28px!important;
+
+box-shadow:
+
+0 18px 40px rgba(0,0,0,.10)!important;
+
+animation:none!important;
+
+transform:none!important;
+
+transition:.3s!important;
+
+}
+
+/* SIN EFECTO HOVER */
+
+.hero-image img:hover{
+
+transform:none!important;
+
+}
+
+/* ELIMINAR ANIMACION */
+
+.hero-image img{
+
+animation:none!important;
+
+}
+
+/* MOVIL */
+
+@media(max-width:1000px){
+
+.hero{
+
+grid-template-columns:1fr!important;
+
+text-align:center!important;
+
+gap:45px!important;
+
+padding:45px!important;
+
+}
+
+.hero-logo img{
+
+margin:auto;
+
+}
+
+.hero h1{
+
+font-size:52px!important;
+
+}
+
+.hero p{
+
+margin:auto!important;
+
+margin-bottom:35px!important;
+
+}
+
+.hero-image::before{
+
+width:330px;
+
+height:330px;
+
+}
+
+.hero-image img{
+
+max-width:330px!important;
+
+}
+
+}
+
+/* ===========================
+   CART ITEMS
+=========================== */
+
+.cart-item{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 0;
+
+border-bottom:1px solid #eee;
+
+gap:15px;
+
+}
+
+.cart-item-info{
+
+flex:1;
+
+}
+
+.cart-item-name{
+
+font-size:16px;
+
+font-weight:600;
+
+color:#4B2D2A;
+
+margin-bottom:6px;
+
+}
+
+.cart-item-price{
+
+font-size:15px;
+
+color:#777;
+
+}
+
+.qty{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+.qty button{
+
+width:30px;
+
+height:30px;
+
+border:none;
+
+border-radius:50%;
+
+background:#F8DCE6;
+
+color:#4B2D2A;
+
+font-weight:700;
+
+font-size:16px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.qty button:hover{
+
+background:#F65A96;
+
+color:white;
+
+}
+
+.qty span{
+
+min-width:20px;
+
+text-align:center;
+
+font-weight:600;
+
+}
+
+.remove{
+
+background:#FFE6EA !important;
+
+color:#E74182 !important;
+
+}
+
+.remove:hover{
+
+background:#E74182 !important;
+
+color:white !important;
+
+}
+
+.cart-total{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:24px;
+
+font-weight:700;
+
+margin:25px 0;
+
+color:#4B2D2A;
+
+}
+
+/*==========================
+      MODAL
+==========================*/
+
+.modal{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.45);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.3s;
+
+z-index:9999;
+
+backdrop-filter:blur(5px);
+
+}
+
+.modal.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.modal-box{
+
+width:420px;
+
+max-width:90%;
+
+background:white;
+
+padding:40px;
+
+border-radius:28px;
+
+text-align:center;
+
+box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+animation:modalPop .35s;
+
+}
+
+.modal-icon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+background:#FFE8ED;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:42px;
+
+color:#F65A96;
+
+}
+
+.modal-box h2{
+
+font-size:30px;
+
+margin-bottom:15px;
+
+color:#4B2D2A;
+
+}
+
+.modal-box p{
+
+color:#777;
+
+font-size:17px;
+
+line-height:1.7;
+
+margin-bottom:30px;
+
+}
+
+.modal-box button{
+
+padding:16px 38px;
+
+background:#F65A96;
+
+color:white;
+
+border:none;
+
+border-radius:50px;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.modal-box button:hover{
+
+background:#E74182;
+
+}
+
+@keyframes modalPop{
+
+0%{
+
+transform:scale(.7);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/*==========================================
+            DONUTS FS LOADER
+==========================================*/
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#fea6bf;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:999999;
+
+transition:1s ease;
+
+overflow:hidden;
+
+}
+
+.loader-hide{
+
+opacity:0;
+visibility:hidden;
+
+}
+
+.loader-content{
+
+position:relative;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+}
+
+/*==========================
+        MOTO
+==========================*/
+
+.loader-moto{
+
+width:320px;
+
+height:auto;
+
+position:relative;
+
+z-index:10;
+
+filter:drop-shadow(0 18px 30px rgba(0,0,0,.18));
+
+animation:bikeBounce .7s ease-in-out infinite alternate;
+
+user-select:none;
+pointer-events:none;
+
+}
+
+/*==========================
+    LÍNEAS DE VELOCIDAD
+==========================*/
+
+.speed-lines{
+
+position:absolute;
+
+left:-180px;
+
+top:105px;
+
+width:140px;
+
+display:flex;
+flex-direction:column;
+gap:16px;
+
+}
+
+.speed-lines span{
+
+height:7px;
+
+border-radius:50px;
+
+background:white;
+
+animation:speed .55s linear infinite;
+
+}
+
+.speed-lines span:nth-child(1){
+
+width:110px;
+
+}
+
+.speed-lines span:nth-child(2){
+
+width:80px;
+
+animation-delay:.15s;
+
+}
+
+.speed-lines span:nth-child(3){
+
+width:60px;
+
+animation-delay:.3s;
+
+}
+
+.speed-lines span:nth-child(4){
+
+width:40px;
+
+animation-delay:.45s;
+
+}
+
+/*==========================
+        HUMO
+==========================*/
+
+.loader-content::after{
+
+content:"";
+
+position:absolute;
+
+left:65px;
+
+top:150px;
+
+width:26px;
+height:26px;
+
+border-radius:50%;
+
+background:white;
+
+opacity:.8;
+
+filter:blur(3px);
+
+animation:smoke 1.3s linear infinite;
+
+}
+
+/*==========================
+      BARRA
+==========================*/
+
+.loading-bar{
+
+position:relative;
+
+margin-top:45px;
+
+width:420px;
+
+height:40px;
+
+border-radius:60px;
+
+background:#ffd3e2;
+
+overflow:hidden;
+
+border:4px solid rgba(255,255,255,.95);
+
+box-shadow:
+
+0 12px 30px rgba(0,0,0,.18),
+
+inset 0 2px 10px rgba(255,255,255,.6);
+
+}
+
+.loading-progress{
+
+position:absolute;
+
+left:0;
+top:0;
+
+height:100%;
+width:0;
+
+border-radius:60px;
+
+background:linear-gradient(
+
+90deg,
+
+#ff4d90,
+
+#ff2e73
+
+);
+
+animation:loading 5s linear forwards;
+
+}
+
+/*==========================
+      TEXTO
+==========================*/
+
+#loadingText{
+
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+width:100%;
+
+text-align:center;
+
+font-size:17px;
+
+font-weight:700;
+
+color:white;
+
+letter-spacing:.4px;
+
+z-index:5;
+
+text-shadow:
+
+0 2px 8px rgba(0,0,0,.25);
+
+user-select:none;
+
+}
+
+/*==========================
+      ANIMACIONES
+==========================*/
+
+@keyframes loading{
+
+0%{
+
+width:0;
+
+}
+
+100%{
+
+width:100%;
+
+}
+
+}
+
+@keyframes bikeBounce{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-7px);
+
+}
+
+}
+
+@keyframes speed{
+
+0%{
+
+transform:translateX(70px);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:translateX(-70px);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes smoke{
+
+0%{
+
+transform:translate(0,0) scale(.5);
+
+opacity:.9;
+
+}
+
+100%{
+
+transform:translate(-60px,-25px) scale(1.8);
+
+opacity:0;
+
+}
+
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:768px){
+
+.loader-moto{
+
+width:230px;
+
+}
+
+.speed-lines{
+
+left:-110px;
+
+top:75px;
+
+}
+
+.loading-bar{
+
+width:300px;
+
+height:34px;
+
+margin-top:30px;
+
+}
+
+#loadingText{
+
+font-size:14px;
+
+}
+
+}
+
+.product-card img{
+
+    width:85%;
+
+    height:250px;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    margin:auto;
+
+    display:block;
+
+    padding:10px;
+
+    transition:.35s;
+
+}
+    </style>
+
+</head>
+
+<body>
+
+<!--=========================================
+                LOADER
+==========================================-->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="speed-lines">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <img
+            src="loader.png"
+            alt="Donuts FS Delivery"
+            class="loader-moto">
+
+        <div class="loading-bar">
+
+            <div class="loading-progress"></div>
+
+            <span id="loadingText">
+
+                🥣 Preparando tus donas...
+
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+    
+    <!-- ===========================
+     MODAL
+=========================== -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-box">
+
+        <div class="modal-icon">
+
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+        </div>
+
+        <h2 id="modal-title">
+            Falta información
+        </h2>
+
+        <p id="modal-message">
+            Completa todos los campos para continuar.
+        </p>
+
+        <button id="closeModal">
+            Entendido
+        </button>
+
+    </div>
+
+</div>
+<header>
+
+    <div class="hero">
+
+        <div class="hero-text">
+
+        <div class="hero-logo">
+
+    <img
+        src="logo.png"
+        alt="Donuts FS Logo">
+
+</div>
+
+            <h1>
+                Un momento
+                <br>
+                Que te dará alegría
+            </h1>
+
+            <p>
+                La dulzura y el sabor del hogar en cada dona.
+            </p>
+
+            <a href="#products" class="hero-btn">
+                Nuestros Sabores
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <!-- CAMBIA ESTA IMAGEN POR LA FOTO QUE ME ENVIASTE -->
+
+            <img
+                src="foto1.jpg"
+                alt="Cheesecake Donut">
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<section class="search-area">
+
+    <input
+        id="search"
+        type="text"
+        placeholder="🔍 Busca tu dona preferida...">
+
+</section>
+
+
+
+<section class="categories">
+
+    <button class="category active" data-category="Todos">
+🛍️ Todos
+</button>
+
+<button class="category" data-category="Classic">
+🍩 Clásicas
+</button>
+
+<button class="category" data-category="Special">
+🍫 Especiales
+</button>
+
+<button class="category" data-category="Premium">
+👑 Premium
+</button>
+
+<button class="category" data-category="Otros">
+Otros
+</button>
+
+</section>
+
+
+
+<div class="container">
+
+    <main id="products" class="products">
+
+        <!-- ================= PRODUCT ================= -->
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Cheesecake Maracuyá">
+
+            <img
+                src="primiun/maracuya.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Cheesecake Maracuyá
+            </h3>
+
+            <p>
+                Dona con crema de cheescake y mermelada de maracuyá.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Cheesecake Maracuyá"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+<div
+            class="product-card"
+            data-category="Premium"
+            data-name="Cheesecake Fresa">
+
+            <img
+                src="primiun/fresa.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Cheesecake Fresa
+            </h3>
+
+            <p>
+                Dona con crema de cheescake y mermelada de fresa.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Cheesecake Fresa"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+    <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Dona ChantiFresa">
+
+            <img
+                src="primiun/fresaconcrema.jpg"
+                alt="ChantiFresa">
+
+            <h3>
+                ChantiFresa
+            </h3>
+
+            <p>
+                Dona con crema batida, fresas, y jalea de fresa.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="ChantiFresa"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Pie de Limón">
+
+            <img
+                src="primiun/limon.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Pie de Limón
+            </h3>
+
+            <p>
+                Dona de Pie de Limón.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Pie de Limón"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Cheesecake Lúcuma">
+
+            <img
+                src="primiun/lucuma.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Cheesecake de Lúcuma
+            </h3>
+
+            <p>
+                Dona con crema de cheescake con lúcuma natural.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Cheesecake Lúcuma"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Pie de Manzana">
+
+            <img
+                src="primiun/manzana.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Pie de Manzana
+            </h3>
+
+            <p>
+                Dona con relleno de Pie de manzana y canela.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Pie de Manzana"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Dona de Moka">
+
+            <img
+                src="primiun/moka.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Dona de Moká
+            </h3>
+
+            <p>
+                Dona con 100% cacao, y un toque de café.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona de Moka"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Dona de Oreo">
+
+            <img
+                src="primiun/oreo.jpg"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Dona de Oreo
+            </h3>
+
+            <p>
+                Dona con trozos de oreo y relleno de crema de oreo.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona de Oreo"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <div
+            class="product-card"
+            data-category="Premium"
+            data-name="Dona Princesa">
+
+            <img
+                src="primiun/princesa.png"
+                alt="Cheesecake Donut">
+
+            <h3>
+                Dona Príncesa
+            </h3>
+
+            <p>
+                Dona con chocolate princesa y chocolate blanco.
+            </p>
+
+            <div class="price">
+                S/. 5.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Príncesa"
+                data-price="5.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <!-- ================= PRODUCT ================= -->
+
+        <div
+            class="product-card"
+            data-category="Special"
+            data-name="Dona Barvaria">
+
+            <img
+                src="especial/barbaria.png"
+                alt="Strawberry Donut">
+
+            <h3>
+                Barvaria
+            </h3>
+
+            <p>
+                Dona con relleno de crema pastelera (Barvaria), espolvoreado de azúcar en polvo.
+            </p>
+
+            <div class="price">
+                S/. 4.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Barvaria"
+                data-price="4.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+  <div
+            class="product-card"
+            data-category="Special"
+            data-name="Dona Chin Chin">
+
+            <img
+                src="especial/chinchin.png"
+                alt="Strawberry Donut">
+
+            <h3>
+                Dona Chin Chin
+            </h3>
+
+            <p>
+                Dona con cobertura de Chocolate y Chin Chin.
+            </p>
+
+            <div class="price">
+                S/. 4.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Chin Chin"
+                data-price="4.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+          <div
+            class="product-card"
+            data-category="Special"
+            data-name="Doña Pepa">
+
+            <img
+                src="especial/donapepa.jpg"
+                alt="Strawberry Donut">
+
+            <h3>
+                Dona Doña Pepa
+            </h3>
+
+            <p>
+                Dona con cobertura de chocolate y Doña Pepa y grajeas.
+            </p>
+
+            <div class="price">
+                S/. 4.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Doña Pepa"
+                data-price="4.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+          <div
+            class="product-card"
+            data-category="Special"
+            data-name="Dona Manjar">
+
+            <img
+                src="especial/manjar.png"
+                alt="Strawberry Donut">
+
+            <h3>
+                Dona Manjar
+            </h3>
+
+            <p>
+                Dona con relleno de manjarblanco, espolvoreado de azúcar en polvo.
+            </p>
+
+            <div class="price">
+                S/. 4.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Manjar"
+                data-price="4.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+          <div
+            class="product-card"
+            data-category="Special"
+            data-name="Dona Sublime">
+
+            <img
+                src="especial/sublime.jpg"
+                alt="Strawberry Donut">
+
+            <h3>
+                La Sublime
+            </h3>
+
+            <p>
+                Dona con cobertura de chocolate y trozos de sublime.
+            </p>
+
+            <div class="price">
+                S/. 4.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Dona Sublime"
+                data-price="4.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Añadir al Carrito
+
+            </button>
+
+        </div>
+
+        <!-- ================= PRODUCT ================= -->
+
+        <div
+            class="product-card"
+            data-category="Classic"
+            data-name="Chocolate Blanco">
+
+            <img
+                src="clasicas/blanco.png"
+                alt="Chocolate Donut">
+
+            <h3>
+                La Albina
+            </h3>
+
+            <p>
+                Dona bañada de Chocolate blanco y diseño con chocolate marrón.
+            </p>
+
+            <div class="price">
+                S/. 3.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="La Albina (Chocolate Blanco)"
+                data-price="3.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+               Añadir al Carrito
+
+            </button>
+
+        </div>
+
+         <div
+            class="product-card"
+            data-category="Classic"
+            data-name="Glaseada azul (Pitufo)">
+
+            <img
+                src="clasicas/celeste.png"
+                alt="Chocolate Donut">
+
+            <h3>
+                El Pitufo
+            </h3>
+
+            <p>
+                Dona bañada de glaseado de color azul y grajeas.
+            </p>
+
+            <div class="price">
+                S/. 3.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="El Pitufo (Glaseada Azul)"
+                data-price="3.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+               Añadir al Carrito
+
+            </button>
+
+        </div>
+
+         <div
+            class="product-card"
+            data-category="Classic"
+            data-name="Chocolate Marrón">
+
+            <img
+                src="clasicas/chocolate.png"
+                alt="Chocolate Donut">
+
+            <h3>
+                La Zamba
+            </h3>
+
+            <p>
+                Dona bañada de Chocolate marrón y grajeas.
+            </p>
+
+            <div class="price">
+                S/. 3.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="La Zamba (Chocolate Marrón)"
+                data-price="3.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+               Añadir al Carrito
+
+            </button>
+
+        </div>
+
+         <div
+            class="product-card"
+            data-category="Classic"
+            data-name="Glaseada Rosa">
+
+            <img
+                src="clasicas/rosa.png"
+                alt="Chocolate Donut">
+
+            <h3>
+                Simpson
+            </h3>
+
+            <p>
+                Dona glaseado rosa con grajeas.
+            </p>
+
+            <div class="price">
+                S/. 3.50
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Simpson (Glaseado Rosa)"
+                data-price="3.50">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+               Añadir al Carrito
+
+            </button>
+
+        </div>
+
+          <div
+            class="product-card"
+            data-category="Otros"
+            data-name="Rollo de Canela">
+
+            <img
+                src="rollocanela.png"
+                alt="Chocolate Donut">
+
+            <h3>
+                Rollo de Canela
+            </h3>
+
+            <p>
+                Rollo de Canela con glaseado
+            </p>
+
+            <div class="price">
+                S/. 4.00
+            </div>
+
+            <button
+                class="add-cart"
+                data-name="Rollo de Canela"
+                data-price="4.00">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+               Añadir al Carrito
+
+            </button>
+
+        </div>
+        <!--
+        =====================================================
+
+        PARA AGREGAR MÁS DONAS
+
+        SOLO COPIA UNO DE LOS BLOQUES ANTERIORES.
+
+        CAMBIA:
+
+        • Imagen
+        • Nombre
+        • Descripción
+        • Precio
+        • Categoría
+
+        El carrito funcionará automáticamente.
+
+        =====================================================
+        -->
+
+    </main>
+
+
+
+    <aside class="cart">
+
+        <h2>
+            🛒 Carrito de Compras
+        </h2>
+
+        <p style="color:#777;margin-bottom:18px;">
+            Revisa tu pedido antes de enviarlo.
+        </p>
+
+        <div id="cart-items">
+
+            <p class="empty">
+                Aún no se han agregado productos.
+            </p>
+
+        </div>
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <span id="total">
+                S/. 0.00
+            </span>
+
+        </div>
+
+        <hr style="margin:20px 0;">
+
+        <input
+            id="customer"
+            type="text"
+            placeholder="👤 Tu Nombre">
+
+        <input
+            id="phone"
+            type="text"
+            placeholder="📞 Teléfono">
+
+        <input
+            id="address"
+            type="text"
+            placeholder="📍 Dirección de Entrega">
+
+        <button id="whatsapp">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Hacer Pedido
+
+        </button>
+
+    </aside>
+
+</div>
+
+
+
+
+
+
+
+<footer>
+
+    <img
+        src="logo.png"
+        alt="Donuts FS">
+
+    <p>
+        Todos los Derechos Reservados a ©Donuts Fs
+    </p>
+
+    <div>
+
+        <i class="fab fa-facebook-f"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-tiktok"></i>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+    // AQUÍ PEGAREMOS TODO EL JAVASCRIPT
+    // EN LOS SIGUIENTES MENSAJES
+
+
+const cart = [];
+
+const cartContainer = document.getElementById("cart-items");
+const totalElement = document.getElementById("total");
+
+
+// ==============================
+// AGREGAR PRODUCTOS
+// ==============================
+
+document.querySelectorAll(".add-cart").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const name=button.dataset.name;
+
+const price=parseFloat(button.dataset.price);
+
+const existing=cart.find(p=>p.name===name);
+
+if(existing){
+
+existing.qty++;
+
+}else{
+
+cart.push({
+
+name,
+
+price,
+
+qty:1
+
+});
+
+}
+
+renderCart();
+
+});
+
+});
+
+
+
+// ==============================
+// PINTAR CARRITO
+// ==============================
+
+function renderCart(){
+
+cartContainer.innerHTML="";
+
+if(cart.length===0){
+
+cartContainer.innerHTML="<p class='empty'>No products yet.</p>";
+
+totalElement.innerHTML="S/.0.00";
+
+return;
+
+}
+
+let total=0;
+
+cart.forEach((item,index)=>{
+
+total+=item.price*item.qty;
+
+const div=document.createElement("div");
+
+div.className="cart-item";
+
+div.innerHTML=`
+
+<div class="cart-item-info">
+
+<div class="cart-item-name">${item.name}</div>
+
+<div class="cart-item-price">
+
+S/. ${item.price.toFixed(2)}
+
+</div>
+
+</div>
+
+<div class="qty">
+
+<button onclick="minus(${index})">-</button>
+
+<span>${item.qty}</span>
+
+<button onclick="plus(${index})">+</button>
+
+<button class="remove" onclick="removeItem(${index})">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</div>
+
+`;
+
+cartContainer.appendChild(div);
+
+});
+
+totalElement.innerHTML="S/. "+total.toFixed(2);
+
+}
+
+
+
+// ==============================
+// +
+// ==============================
+
+function plus(index){
+
+cart[index].qty++;
+
+renderCart();
+
+}
+
+
+
+// ==============================
+// -
+// ==============================
+
+function minus(index){
+
+cart[index].qty--;
+
+if(cart[index].qty<=0){
+
+cart.splice(index,1);
+
+}
+
+renderCart();
+
+}
+
+
+
+// ==============================
+// ELIMINAR
+// ==============================
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+renderCart();
+
+}
+
+
+
+// ==============================
+// BUSCADOR
+// ==============================
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",()=>{
+
+const value=search.value.toLowerCase();
+
+document.querySelectorAll(".product-card").forEach(card=>{
+
+const text=card.dataset.name.toLowerCase();
+
+card.style.display=text.includes(value)?"block":"none";
+
+});
+
+});
+
+
+
+// ==============================
+// CATEGORIAS
+// ==============================
+
+document.querySelectorAll(".category").forEach(btn=>{
+
+const categoryButtons = document.querySelectorAll(".category");
+const productCards = document.querySelectorAll(".product-card");
+
+categoryButtons.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        categoryButtons.forEach(btn=>btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+        const selectedCategory = button.dataset.category;
+
+        productCards.forEach(card=>{
+
+            if(selectedCategory==="Todos"){
+
+                card.style.display="block";
+                return;
+
+            }
+
+            if(card.dataset.category===selectedCategory){
+
+                card.style.display="block";
+
+            }else{
+
+                card.style.display="none";
+
+            }
+
+        });
+
+    });
+
+});
+
+});
+
+/*==========================================
+            MODAL PREMIUM
+==========================================*/
+
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalMessage = document.getElementById("modal-message");
+const closeModal = document.getElementById("closeModal");
+
+function showModal(title, message){
+
+    modalTitle.innerHTML = title;
+
+    modalMessage.innerHTML = message;
+
+    modal.classList.add("show");
+
+}
+
+function hideModal(){
+
+    modal.classList.remove("show");
+
+}
+
+closeModal.addEventListener("click", hideModal);
+
+modal.addEventListener("click",(e)=>{
+
+    if(e.target===modal){
+
+        hideModal();
+
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
+
+        hideModal();
+
+    }
+
+});
+
+
+/*==========================================
+    VALIDACIONES REUTILIZABLES
+==========================================*/
+
+function validateField(input,title,message){
+
+    if(input.value.trim()===""){
+
+        input.focus();
+
+        input.style.border="2px solid #F65A96";
+
+        showModal(title,message);
+
+        return false;
+
+    }
+
+    input.style.border="1px solid #ececec";
+
+    return true;
+
+}
+
+//text
+
+/*==========================================
+        WHATSAPP CHECKOUT
+==========================================*/
+
+document.getElementById("whatsapp").addEventListener("click",()=>{
+
+    if(cart.length===0){
+
+        showModal(
+
+            "Carrito vacío 🛒",
+
+            "Agrega al menos un producto antes de realizar tu pedido."
+
+        );
+
+        return;
+
+    }
+
+    const customer=document.getElementById("customer");
+
+    const phone=document.getElementById("phone");
+
+    const address=document.getElementById("address");
+
+    if(!validateField(
+
+        customer,
+
+        "Nombre requerido",
+
+        "Por favor ingresa tu nombre."
+
+    )) return;
+
+    if(!validateField(
+
+        phone,
+
+        "Teléfono requerido",
+
+        "Por favor ingresa tu número de teléfono."
+
+    )) return;
+
+    if(!validateField(
+
+        address,
+
+        "Dirección requerida",
+
+        "Por favor ingresa la dirección de entrega."
+
+    )) return;
+
+    let total=0;
+
+    let message="🍩 *DONUTS FS*%0A%0A";
+
+    message+="Hola, quisiera realizar el siguiente pedido:%0A%0A";
+
+    cart.forEach(item=>{
+
+        total+=item.price*item.qty;
+
+        message+=`• ${item.qty} x ${item.name} - S/. ${(item.price*item.qty).toFixed(2)}%0A`;
+
+    });
+
+    message+="%0A";
+
+    message+="━━━━━━━━━━━━━━%0A";
+
+    message+=`💰 *TOTAL:* S/. ${total.toFixed(2)}%0A`;
+
+    message+="━━━━━━━━━━━━━━%0A%0A";
+
+    message+=`👤 *Nombre:* ${customer.value}%0A`;
+
+    message+=`📞 *Teléfono:* ${phone.value}%0A`;
+
+    message+=`📍 *Dirección:* ${address.value}%0A%0A`;
+
+    message+="¡Muchas gracias! 😊";
+
+    window.open(
+
+        `https://wa.me/51900434897?text=${message}`,
+
+        "_blank"
+
+    );
+
+});
+
+
+/*==========================================
+            DONUTS FS LOADER
+==========================================*/
+
+const loader = document.getElementById("loader");
+const loadingText = document.getElementById("loadingText");
+const progress = document.querySelector(".loading-progress");
+
+window.addEventListener("load",()=>{
+
+    const messages=[
+
+        "🥣 Preparando la masa...",
+        "🍓 Agregando el relleno...",
+        "🍫 Decorando tus donas...",
+        "📦 Empacando tu pedido...",
+        "✅ ¡Pedido listo!"
+
+    ];
+
+    let index=0;
+
+    const changeText=setInterval(()=>{
+
+        index++;
+
+        if(index<messages.length){
+
+            loadingText.innerHTML=messages[index];
+
+        }
+
+    },1000);
+
+    progress.addEventListener("animationend",()=>{
+
+        clearInterval(changeText);
+
+        progress.style.background=
+        "linear-gradient(90deg,#4CD964,#2DBE60)";
+
+        loadingText.innerHTML="✅ ¡Pedido listo!";
+
+        setTimeout(()=>{
+
+            loader.classList.add("loader-hide");
+
+            document.body.style.overflow="auto";
+
+        },700);
+
+    });
+
+});
+
+/* Evita que se pueda hacer scroll mientras carga */
+
+document.body.style.overflow="hidden";
+
+</script>
+
+
+
+</body>
+
+</html>
