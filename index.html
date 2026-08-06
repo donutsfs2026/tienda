@@ -1714,6 +1714,105 @@ font-size:14px;
     transition:.35s;
 
 }
+
+
+/*==============================
+CARRITO FLOTANTE
+===============================*/
+
+#floating-cart{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:72px;
+
+height:72px;
+
+background:linear-gradient(135deg,#ff5b95,#ff8eb8);
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#fff;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 18px 40px rgba(255,91,149,.45);
+
+z-index:9999;
+
+transition:.35s;
+
+}
+
+#floating-cart:hover{
+
+transform:translateY(-6px) scale(1.08);
+
+box-shadow:0 25px 50px rgba(255,91,149,.55);
+
+}
+
+#floating-count{
+
+position:absolute;
+
+top:-6px;
+
+right:-6px;
+
+width:28px;
+
+height:28px;
+
+background:#fff;
+
+color:#ff4d8d;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:14px;
+
+font-weight:700;
+
+border:3px solid #ff5b95;
+
+}
+
+@media(max-width:700px){
+
+#floating-cart{
+
+width:62px;
+
+height:62px;
+
+font-size:25px;
+
+right:18px;
+
+bottom:18px;
+
+}
+
+}
     </style>
 
 </head>
@@ -2549,7 +2648,7 @@ Otros
 
 
 
-    <aside class="cart">
+    <aside class="cart" id="cart">
 
         <h2>
             🛒 Carrito de Compras
@@ -2698,9 +2797,11 @@ cartContainer.innerHTML="";
 
 if(cart.length===0){
 
-cartContainer.innerHTML="<p class='empty'>No products yet.</p>";
+cartContainer.innerHTML="<p class='empty'>No colocaste nada en tu carrito.</p>";
 
 totalElement.innerHTML="S/.0.00";
+
+updateFloatingCart();
 
 return;
 
@@ -2753,6 +2854,8 @@ cartContainer.appendChild(div);
 });
 
 totalElement.innerHTML="S/. "+total.toFixed(2);
+
+updateFloatingCart();
 
 }
 
@@ -3104,9 +3207,35 @@ window.addEventListener("load",()=>{
 
 document.body.style.overflow="hidden";
 
+/*carro*/
+ 
+function updateFloatingCart(){
+
+    const floatingCount = document.getElementById("floating-count");
+
+    if(!floatingCount) return;
+
+    const totalItems = cart.reduce((sum,item)=>sum + item.qty,0);
+
+    floatingCount.textContent = totalItems;
+
+    floatingCount.style.display = totalItems > 0 ? "flex" : "none";
+
+}
+
 </script>
 
+<!--==============================
+CARRITO FLOTANTE
+===============================-->
 
+<a href="#cart" id="floating-cart">
+
+    <i class="fas fa-shopping-cart"></i>
+
+    <span id="floating-count">0</span>
+
+</a>
 
 </body>
 
