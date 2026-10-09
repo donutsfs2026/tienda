@@ -1813,6 +1813,108 @@ bottom:18px;
 }
 
 }
+
+    /*==========================================
+        ESPACIO DEL JUEGO
+==========================================*/
+
+.game-section{
+padding:10px 7% 40px;
+}
+
+.game-box{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+background:linear-gradient(135deg,#F65A96,#FF80AF);
+border-radius:35px;
+padding:45px 55px;
+color:#fff;
+box-shadow:0 20px 40px rgba(246,90,150,.35);
+position:relative;
+overflow:hidden;
+}
+
+.game-box::before{
+content:"";
+position:absolute;
+right:-90px;
+top:-90px;
+width:260px;
+height:260px;
+background:#fff;
+border-radius:50%;
+opacity:.12;
+}
+
+.game-text{
+position:relative;
+z-index:2;
+}
+
+.game-text h2{
+font-family:"DM Serif Display",serif;
+font-size:40px;
+font-weight:400;
+margin-bottom:10px;
+}
+
+.game-text p{
+font-size:18px;
+line-height:1.6;
+opacity:.95;
+max-width:520px;
+}
+
+.game-btn{
+position:relative;
+z-index:2;
+flex-shrink:0;
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:18px 40px;
+background:#fff;
+color:#E74182;
+font-weight:700;
+font-size:17px;
+border-radius:60px;
+transition:.35s;
+box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.game-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 18px 35px rgba(0,0,0,.22);
+}
+
+@media(max-width:1000px){
+
+.game-box{
+flex-direction:column;
+text-align:center;
+padding:35px 28px;
+}
+
+.game-text h2{
+font-size:32px;
+}
+
+.game-text p{
+margin:auto;
+}
+
+}
+
+@media(max-width:700px){
+
+.game-section{
+padding-left:25px;
+padding-right:25px;
+}
+
+}
     </style>
 
 </head>
@@ -1930,7 +2032,31 @@ bottom:18px;
 
 </header>
 
+<!-- ===== ESPACIO DEL JUEGO ===== -->
+<section class="game-section" id="juego">
 
+    <div class="game-box">
+
+        <div class="game-text">
+
+            <h2>🍩 Donuts FS: Night Shift</h2>
+
+            <p>
+                ¿Te atreves a sobrevivir una noche en Donuts FS Chosica?
+                Juega y gana un cupón de descuento.
+            </p>
+
+        </div>
+
+        <a href="game.html" class="game-btn">
+            <i class="fa-solid fa-gamepad"></i>
+            Jugar ahora
+        </a>
+
+    </div>
+
+</section>
+<!-- ===== FIN ESPACIO DEL JUEGO ===== -->
 
 <section class="search-area">
 
